@@ -1,0 +1,136 @@
+{
+  "modelId": "gpt-5.4-mini",
+  "pages": [
+    {
+      "pageNumber": 1,
+      "width": 8.2677,
+      "height": 11.6929
+    }
+  ],
+  "paragraphs": [
+    {
+      "pageNumber": 1,
+      "content": "Adjacent numeric cells"
+    }
+  ],
+  "tables": [
+    {
+      "pageNumbers": [
+        1
+      ],
+      "rowCount": 2,
+      "columnCount": 3,
+      "cells": [
+        {
+          "kind": "columnHeader",
+          "rowIndex": 0,
+          "columnIndex": 0,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "content": "Product",
+          "pageNumber": 1
+        },
+        {
+          "kind": "columnHeader",
+          "rowIndex": 0,
+          "columnIndex": 1,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "content": "Quantity",
+          "pageNumber": 1
+        },
+        {
+          "kind": "columnHeader",
+          "rowIndex": 0,
+          "columnIndex": 2,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "content": "Rate",
+          "pageNumber": 1
+        },
+        {
+          "kind": "content",
+          "rowIndex": 1,
+          "columnIndex": 0,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "content": "A",
+          "pageNumber": 1
+        },
+        {
+          "kind": "content",
+          "rowIndex": 1,
+          "columnIndex": 1,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "content": "5",
+          "pageNumber": 1
+        },
+        {
+          "kind": "content",
+          "rowIndex": 1,
+          "columnIndex": 2,
+          "rowSpan": 1,
+          "columnSpan": 1,
+          "content": "8",
+          "pageNumber": 1
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "enabled": true,
+    "method": "independent-extraction-comparison",
+    "secondaryModel": "mistral-ocr-4-0",
+    "document": {
+      "agreement": 0.6875,
+      "reason": "PARTIAL_AGREEMENT"
+    },
+    "tables": [
+      {
+        "agreement": 0.375,
+        "reason": "STRUCTURE_MISMATCH",
+        "tableIndex": 0,
+        "cells": [
+          {
+            "agreement": 1.0,
+            "reason": null,
+            "rowIndex": 0,
+            "columnIndex": 0
+          },
+          {
+            "agreement": 0.0,
+            "reason": "MERGED_CELLS_IN_SECONDARY",
+            "rowIndex": 0,
+            "columnIndex": 1
+          },
+          {
+            "agreement": 0.0,
+            "reason": "MERGED_CELLS_IN_SECONDARY",
+            "rowIndex": 0,
+            "columnIndex": 2
+          },
+          {
+            "agreement": 1.0,
+            "reason": null,
+            "rowIndex": 1,
+            "columnIndex": 0
+          },
+          {
+            "agreement": 0.0,
+            "reason": "MERGED_CELLS_IN_SECONDARY",
+            "rowIndex": 1,
+            "columnIndex": 1
+          },
+          {
+            "agreement": 0.0,
+            "reason": "MERGED_CELLS_IN_SECONDARY",
+            "rowIndex": 1,
+            "columnIndex": 2
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  }
+}

@@ -1,0 +1,13 @@
+# Runtime dependencies for the Foundry code deploy (installed by the remote build).
+# Keep in sync with [project.dependencies] in ../pyproject.toml (checked by tests/unit/test_packaging.py).
+aiohttp==3.13.5
+azure-ai-agentserver-core==2.1.0
+azure-ai-agentserver-invocations==1.1.0
+azure-ai-projects==2.0.1
+azure-identity==1.25.3
+# azure-ai-projects imports httpx directly; OpenAI 3 moves to httpx2.
+httpx==0.28.1
+openai==2.54.0
+pydantic==2.14.1
+pydantic-settings==2.16.1
+pypdf==6.21.1
